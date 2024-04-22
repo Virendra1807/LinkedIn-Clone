@@ -1,0 +1,355 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: rgb(219, 221, 222);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.header{
+    width: 100%;
+    height: 65px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.header .search-bar{
+    display: flex;
+    position: fixed;
+
+}
+
+.header .search-bar img{
+    margin: 0;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    margin-left: 200px;
+    margin-right: 10px;
+}
+
+.header .search-bar input{
+    width: 250px;
+    height: 35px;
+}
+
+#search-icon{
+    margin: 0;
+    padding: 0;
+    height: 17px;
+    width: 17px;
+    position: absolute;
+    left: 248px;
+    top: 9px;
+}
+
+.header nav{
+    position: relative;
+    left: 700px;
+    display: flex;
+}
+
+.navigation .icons{
+    width: 20px;
+}
+
+#profile{
+    width: 25px;
+    border-radius: 50%;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    
+}
+
+.navigation a{
+    text-decoration: none;
+}
+.navigation #down-arrow{
+    width: 10px;
+}
+
+.header nav .premium{
+    position: relative;
+    left: 80px;
+    text-align: center;
+}
+
+
+.header nav .premium span{
+    color: rgb(255, 222, 8);
+}
+
+
+/* Now Css for main content */
+
+.main-content{
+    display: flex;
+    margin: 90px 250px;
+    /* position: fixed; */
+    position: absolute;
+}
+
+.main-content .left{
+    width: 250px;
+    height: 760px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    line-height: 20px;
+}
+
+.main-content .center{
+    width: 600px;
+    height: 1500px;
+    background-color: rgb(219, 221, 222);
+    border-radius: 10px;
+    margin-left: 30px;
+
+}
+
+.main-content .right{
+    width: 350px;
+    height: 900px;
+    margin-left: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-content .left .background{
+    background-color: rgb(233, 33, 255);
+    width: 100%;
+    height: 80px;
+    background-image: url("https://img.freepik.com/premium-photo/door-with-blue-purple-neon-sign-it_993259-2857.jpg?w=360");
+}
+
+.main-content .left .profile-img img{
+    width: 70px;
+    border-radius: 50%;
+    position: relative;
+    left: 90px;
+    top: -20px;
+}
+
+.main-content .left .profile-img > small{
+    margin-left: 30px;
+    color: grey;
+}
+
+.main-content .left .connections{
+    margin: 20px 0;
+    padding: 10px;
+    line-height: 25px;
+    
+}
+
+.main-content .left .connections .conn{
+    float: left;
+    color: grey;
+}
+
+.main-content .left .connections .num{
+    float: right;
+   color: rgb(8, 8, 255);
+
+}
+
+.main-content .left .connections h4{
+    display: inline;
+}
+
+#saved{
+    /* background-color: rgb(88, 2, 173); */
+    height: 30px;
+    width: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 5px 5px .2px grey;
+}
+
+#recent{
+    margin-top: 20px;
+    padding: 10px;
+    /* background-color: rebeccapurple; */
+    line-height: 25px;
+    box-shadow: 1px 1px 5px 3px grey;
+    border-radius: 10px
+}
+
+#recent h5{
+    /* margin-bottom: 10px; */
+    font-size: 15px;    
+}
+
+#recent {
+    display: flex;
+    flex-direction: column;
+}
+
+#recent label{
+    color: grey;
+}
+
+
+/* style for center posts content */
+
+.main-content .center .add-post{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.main-content .center .add-post img{
+    border-radius: 50%;
+
+}
+
+.main-content .center .add-post input{
+    width: 460px;
+    height: 40px;
+    border-radius: 15px;
+    position: relative;
+    margin-left: 10px;
+    top: -20px;
+}
+
+.main-content .center .add-post .media, a{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+
+.main-content .center .post{
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.main-content .center .post img{
+    float: left;
+    margin-right: 8px;
+} 
+
+.main-content .center .post .dotts{
+    width: 30px;
+    float: right;
+    border-radius: 50%;
+} 
+
+.main-content .center .post .likes{
+    height: 30px;
+    position: relative;
+    margin-top: 400px;
+    
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-content .center .post .likes img{
+    cursor: pointer;
+}
+
+.main-content .right .news{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+
+/* Right side style */
+
+.main-content .right .news img{
+    float: right;
+    margin-top: -10PX;
+}
+
+.main-content .right .news h4{
+    display: inline;
+}
+
+.main-content .right .news ul{
+    padding: 20px;
+}
+
+
+#unilever img{
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#unilever span{
+    font-weight: bold;
+}
+
+#unilever #follow-btn {
+    margin-top: 10px;
+    font-weight: bold;
+    width: 260px;
+    height: 30px;
+    border-radius: 20px;
+    align-self: center;
+}
+
+#unileve img{
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#unileve span{
+    font-weight: bold;
+}
+
+#unileve #follow-bt {
+    margin-top: 10px;
+    font-weight: bold;
+    width: 260px;
+    height: 30px;    
+    border-radius: 20px;
+}
+
+#unilev img{
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#unilev span{
+    font-weight: bold;
+}
+
+#unilev #follow-b {
+    margin-top: 10px;
+    font-weight: bold;
+    width: 260px;
+    height: 30px;
+    border-radius: 20px;
+}
